@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Destination — Kudla</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Namma Kudla</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="destination.html">Destinations</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container destination-main">
+    <h1>St. Mary’s Island</h1>
+    <p class="meta">A quick guide to visiting the island.</p>
+    <div class="destination-grid">
+      <div class="gallery">
+        <img src="island1.jpeg" alt="island" />
+        <img src="island2.jpeg" alt="island" />
+      </div>
+      <div class="guide">
+        <h3>Overview</h3>
+        <p>St. Mary’s Island, also known as Coconut Island, is a stunning group of small islands near Udupi, famous for its crystal-clear waters, white sand beaches, and unique hexagonal volcanic rock formations. It is one of the most beautiful and peaceful destinations in Coastal Karnataka.</p>
+        
+        
+        <h4>Tips</h4>
+        <ul>
+          <li>Best time: Oct–Mar</li>
+          <li>Bring water & sunscreen</li>
+        </ul>
+        <!-- Map Container -->
+<div id="map" class="map-placeholder" style="height: 300px; border-radius: 8px;"></div>
+
+<!-- Leaflet CSS -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+  // St. Mary’s Island Coordinates
+  const stmarysLat = 13.3792;
+  const stmarysLng = 74.67325;
+
+  // Initialize map using same "map" ID
+  const map = L.map("map").setView([stmarysLat, stmarysLng], 13);
+
+  // Load OpenStreetMap tiles
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 18,
+    attribution: "© OpenStreetMap contributors",
+  }).addTo(map);
+
+  // Add a marker
+  L.marker([stmarysLat, stmarysLng])
+    .addTo(map)
+    .bindPopup("<b>St. Mary's Island</b><br>Near Malpe, Udupi")
+    .openPopup();
+</script>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Namma Kudla</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

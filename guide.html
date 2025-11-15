@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Guide Profile — Namma Kudla</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Namma Kudla</a>
+    </div>
+  </header>
+
+  <main class="container profile">
+    <div class="profile-card">
+      <img src="guide.jpeg" alt="Guide photo" />
+      <h2>Arun Kumar</h2>
+      <p class="muted">Cultural & heritage guide • 8 years experience</p>
+      <p>Bio: Arun knows old Kudla neighborhoods, temples, local stories...</p>
+
+      <h4>Contact Arun</h4>
+      <form id="contactGuideForm">
+        <input name="visitorName" placeholder="Your name" required />
+        <input name="visitorEmail" type="email" placeholder="Your email" required />
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+
+    <section class="guide-posts">
+      <h3>Posts by Arun</h3>
+      <img src="guidefood.jpeg" alt="Guide photo" />
+      <ul id="guidePosts"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Namma Kudla</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

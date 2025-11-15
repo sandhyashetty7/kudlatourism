@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog Post — Namma Kudla</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Namma Kudla</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="destination.html">Destinations</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container post-container">
+    <article class="post">
+      <h1 id="postTitle">A Day in Kudla: Beaches, Temples & Seafood</h1>
+      <p class="meta">By <strong>Sandhya</strong> • Nov 10, 2025</p>
+      <img src="panamburbeach.jpeg" alt="Kudla beach" class="post-hero" />
+      <img src="kudrolitemple.jpeg" alt="temple" />
+      <img src="seafood.jpeg" alt="food" />
+      <div class="post-content">
+        <p>🌊 About Namma Kudla
+
+Namma Kudla, the heart of Coastal Karnataka, is a city where tradition meets the sea. Blessed with serene beaches, rich cultural heritage, and mouth-watering coastal cuisine, Kudla is a destination filled with charm and warmth. Whether you’re exploring ancient temples, enjoying sunset views, tasting authentic seafood, or experiencing local art forms, Kudla offers something magical for every traveller.
+Step in and experience the true spirit of Namma Kudla..</p>
+        <h3>Local Tips</h3>
+        <p>Try the local seafood and visit the sunrise at the shoreline.</p>
+      </div>
+    </article>
+
+    <aside class="sidebar">
+      <div class="widget">
+        <h4>Categories</h4>
+        <ul><li>Food</li><li>Culture</li><li>Beaches</li></ul>
+      </div>
+      <div class="widget">
+        <h4>Recent Posts</h4>
+        <ul id="sidebarRecent"></ul>
+      </div>
+    </aside>
+
+    <section class="comments container" id="commentsSection">
+      <h3>Comments</h3>
+      <form id="commentForm">
+        <input name="name" placeholder="Your name" required />
+        <textarea name="comment" placeholder="Write a comment" required></textarea>
+        <button type="submit" class="btn">Post Comment</button>
+      </form>
+      <ul id="commentList"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Namma Kudla</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
